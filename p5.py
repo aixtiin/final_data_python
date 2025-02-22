@@ -10,7 +10,7 @@ data.columns = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thala
 data['sex'] = data['sex'].map({0: 'Female', 1: 'Male'})
 data['cp'] = data['cp'].map({4: 'Typical Angina',1: 'Atypical Angina',2: 'Non-Anginal Pain',3: 'Asymptomatic'})
 
-sns.swarmplot(x='sex', y='age', data=data, hue='cp', palette='rocket', dodge=True)
+sns.swarmplot(x='sex', y='age', data=data, hue='cp', palette='rocket')
 plt.xlabel('gender')
 plt.ylabel('age')
 plt.title('age + gender + chest pain')
